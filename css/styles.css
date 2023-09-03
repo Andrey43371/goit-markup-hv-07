@@ -99,7 +99,7 @@ img {
 
 /* section 2 */
 .sectionblok {
-  padding: 120px 0;
+  padding: 70px 0;
 }
 .heading {
   position: absolute;
@@ -114,19 +114,20 @@ img {
   overflow: hidden;
 }
 .blok {
-  display: flex;
   gap: 24px;
 }
 
 .feature {
-  width: calc((100% - 72px) / 4);
-  display: flex;
+  text-align: center;
+  width: 100%;
+  display: block;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
+  margin: 50px 0;
 }
 .featuretwo {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -148,6 +149,7 @@ img {
 
 /* section 3 */
 .sectionservice {
+  display: none;
   padding-bottom: 120px;
 }
 
@@ -178,7 +180,7 @@ img {
 .sectionfour {
   padding: 120px 0;
   background-color: #f4f4fd;
-  height: 732px;
+  /*height: 732px;*/
 }
 
 .headlinesections {
@@ -191,12 +193,13 @@ img {
   color: var(--first-text-color);
 }
 .four {
-  display: flex;
+  text-align: center;
   gap: 24px;
 }
 
 .picture {
   display: inline-block;
+  margin-bottom: 60px;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -261,15 +264,13 @@ img {
   text-transform: capitalize;
 }
 .sectionfive {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 0px;
-  gap: 24px;
 }
 .fivelist-item {
-  width: calc((100% - 120px) / 6);
+  display: inline-block;
+  width: 40%;
   height: 88px;
+  margin: 30px 10px;
 }
 .fivelist-link {
   width: 100%;
@@ -296,19 +297,16 @@ img {
 
 /* footer */
 .box {
-  display: flex;
+  display: block;
   padding: 100px 0;
   background: var(--second-pege-background);
-  text-align: left;
+  text-align: center;
 }
 .footerbox {
-  display: flex;
-  align-items: baseline;
-  width: 1158px;
-  margin: 0 auto;
+  display: block;
+
 }
 .boxfooter {
-  margin-right: 120px;
 }
 
 .box-link {
@@ -333,6 +331,7 @@ img {
 }
 
 .boxdesc {
+  margin: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -349,6 +348,7 @@ img {
 .footerlist {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 .footerrow {
   width: 40px;
@@ -372,7 +372,6 @@ img {
   fill: var(--second-icon-color);
 }
 .footerform {
-  margin-left: 100px;
 }
 .subscription {
   margin-bottom: 16px;
@@ -382,10 +381,7 @@ img {
    letter-spacing: 0.02em;
   color: #ffffff;
 }
-.formsubscription {
-  display: flex;
-  gap: 24px ;
-}
+
 
 .inputsubscription {
   width: 264px; 
@@ -401,6 +397,7 @@ img {
    color: #ffffff;
 }
 .subscribe-btn {
+  margin: auto;
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -443,11 +440,11 @@ img {
   justify-content: space-around;
 }
 
-.container {
-  /* width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; */
-}
+/*.container {*/
+/*   width: 1158px;*/
+/*  margin: 0 auto;*/
+/*  padding: 0 15px;*/
+/*}*/
 
 .header-nav {
   display: flex;
@@ -506,7 +503,7 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 30px;
   line-height: 24px;
   letter-spacing: 0.02em;
   padding: 24px 0;
@@ -515,17 +512,7 @@ img {
   color: #000000;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-link-active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  border-radius: 2px;
-  background-color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .adress-link-active {
   color: #404bbf;
@@ -548,14 +535,12 @@ img {
   margin-left: auto;
 }
 .cart {
-  display: flex;
   justify-content: space-around;
   gap: 40px;
   align-items: center;
 }
 
 .mail-tel {
-  display: flex;
   justify-content: flex-end;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -685,7 +670,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 350px;
   min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -872,4 +857,10 @@ font-weight: 500;
 .modalformbtn:focus {
     background-color: #404bbf;
   cursor: pointer;
-} 
+}
+.active {
+  color: var(--third-text-color);
+}
+.text-bg {
+  font-size: 30px;
+}
