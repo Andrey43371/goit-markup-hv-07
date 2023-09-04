@@ -38,9 +38,7 @@ letter-spacing: 0.32px;
  .mail-tel {
         margin-bottom: 40px;
     }
-    .footerlist {
-        gap: 54px;
-    }
+    
 }
 
 @media screen and (min-width: 768px) {
